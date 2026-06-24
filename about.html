@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Stackly Electronic Mobility</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+        <div class="loader-container">
+            <div class="preloader-content">
+                <div class="logo-animation">
+                    <img src="stackly-logo-main.webp" alt="Stackly Logo" class="preloader-logo">
+                    <div class="logo-glow"></div>
+                </div>
+                <div class="preloader-text">
+                    <p class="preload-line">Charge.</p>
+                    <p class="preload-line">Drive.</p>
+                    <p class="preload-line">Sustain.</p>
+                </div>
+                <p class="loader-subtitle">Loading your journey</p>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="stackly-logo-main.webp" alt="Stackly Logo" class="logo-image" style="width: 85px; height: auto;">
+            </a>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="vehicles.html">Electric Vehicles</a></li>
+                <li><a href="charging.html">Charging</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li id="logoutLi" style="display: none; border-top: 1px solid #e0e0e0; padding-top: 15px; margin-top: 10px;"><a href="#" onclick="handleLogout(event)" class="auth-btn" style="width: 100%; text-align: center; background: #FF6B6B; color: white;">Logout</a></li>
+                <li id="authLi"><a href="login.html" class="auth-btn">Login</a></li>
+                <li id="signupLi"><a href="register.html" class="auth-btn primary"> Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ABOUT HERO -->
+    <section class="about-hero">
+        <h1>About Stackly</h1>
+        <p>Building the future of sustainable mobility, one charge at a time</p>
+    </section>
+
+    <!-- ABOUT CONTENT -->
+    <section class="about-content">
+        <div class="about-section">
+            <h2>Our Mission</h2>
+            <p>At Stackly, we believe that sustainable transportation should be accessible to everyone. Our mission is to democratize smart and sustainable mobility solutions while healing the planet for future generations. We're committed to building products that combine affordability, innovation, and environmental responsibility.</p>
+        </div>
+
+        <div class="about-section">
+            <h2>Our Vision</h2>
+            <p>We envision a world where every commute is powered by clean energy, where cities are free from pollution, and where technology serves humanity. Stackly is pioneering this vision by creating electric vehicles that are not just transportation tools, but symbols of progress toward a sustainable future.</p>
+        </div>
+
+        <div class="about-section">
+            <h2>Why Stackly?</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3>🔬 Innovation</h3>
+                    <p>We invest heavily in R&D to bring cutting-edge technology to every product</p>
+                </div>
+                <div class="why-card">
+                    <h3>💚 Sustainability</h3>
+                    <p>Every decision we make considers environmental impact and carbon footprint</p>
+                </div>
+                <div class="why-card">
+                    <h3>👥 Community</h3>
+                    <p>We're building a movement of eco-conscious riders and believers</p>
+                </div>
+                <div class="why-card">
+                    <h3>⭐ Quality</h3>
+                    <p>Superior engineering and uncompromising product quality define us</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section class="team-section">
+        <h2>Meet Our Leadership</h2>
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="image/mobility12.jpg" alt="Vikram Singh" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                </div>
+                <h3>Vikram Singh</h3>
+                <p>Founder & CEO</p>
+                <small>Leading the vision of sustainable mobility with 15+ years of experience</small>
+            </div>
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="image/mobility13.jpg" alt="Neha Kapoor" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                </div>
+                <h3>Neha Kapoor</h3>
+                <p>Chief Technology Officer</p>
+                <small>Driving innovation in battery and motor technology</small>
+            </div>
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="image/rajesh-patel.jpg" alt="Rajesh Patel" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                </div>
+                <h3>Rajesh Patel</h3>
+                <p>Chief Operating Officer</p>
+                <small>Ensuring excellence in operations and customer service</small>
+            </div>
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="image/mobility17.jpg" alt="Priya Sharma" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                </div>
+                <h3>Priya Sharma</h3>
+                <p>Head of Marketing</p>
+                <small>Building brand awareness for sustainable mobility</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- MILESTONES SECTION -->
+    <section class="milestones-section">
+        <h2>Our Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>2020 - Founded</h3>
+                    <p>Stackly was founded with a vision to revolutionize urban mobility</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>2021 - First Product Launch</h3>
+                    <p>Launched our flagship E-Scooter with breakthrough battery technology</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>2022 - Market Expansion</h3>
+                    <p>Expanded to 25 cities across India with 50K+ happy customers</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>2023 - Product Line Expansion</h3>
+                    <p>Added E-Bikes and E-Rickshaws to our growing portfolio</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>2024 - 100K Customers</h3>
+                    <p>Reached 100,000 satisfied customers and major funding milestone</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>2025 - AI Integration</h3>
+                    <p>Integrated AI and IoT for smart vehicle management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMPACT SECTION -->
+    <section class="impact-section">
+        <h2>Our Environmental Impact</h2>
+        <div class="impact-grid">
+            <div class="impact-card">
+                <h3>2.5M+</h3>
+                <p>Equivalent Trees Planted</p>
+                <div class="impact-bar"><div class="impact-fill" style="width: 85%;"></div></div>
+            </div>
+            <div class="impact-card">
+                <h3>45M+</h3>
+                <p>Litres of Petrol Saved</p>
+                <div class="impact-bar"><div class="impact-fill" style="width: 75%;"></div></div>
+            </div>
+            <div class="impact-card">
+                <h3>1.2B+</h3>
+                <p>E-Kilometers Driven</p>
+                <div class="impact-bar"><div class="impact-fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="impact-card">
+                <h3>1.5L+</h3>
+                <p>Tons of CO2 Emissions Saved</p>
+                <div class="impact-bar"><div class="impact-fill" style="width: 80%;"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <h2>Join the Stackly Community</h2>
+        <p>Be part of the sustainable mobility revolution</p>
+        <div class="cta-buttons">
+            <button class="btn btn-primary" onclick="window.location.href='register.html'">Get Started</button>
+            <button class="btn btn-secondary" onclick="window.location.href='index.html'">Explore Products</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Stackly</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="products.html">E-Scooters</a></li>
+                    <li><a href="products.html">E-Bikes</a></li>
+                    <li><a href="products.html">E-Rickshaws</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Stackly Electronic Mobility. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
