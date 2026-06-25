@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Stackly | Electric Vehicles & Charging</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="stackly-logo-main.webp" alt="Stackly Logo" class="logo-image" style="width: 85px; height: auto;">
+            </a>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="vehicles.html">Electric Vehicles</a></li>
+                <li><a href="charging.html">Charging</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li id="logoutLi" style="display: none; border-top: 1px solid #e0e0e0; padding-top: 15px; margin-top: 10px;"><a href="#" onclick="handleLogout(event)" class="auth-btn" style="width: 100%; text-align: center; background: #FF6B6B; color: white;">Logout</a></li>
+                <li id="authLi"><a href="login.html" class="auth-btn active">Login</a></li>
+                <li id="signupLi"><a href="register.html" class="auth-btn primary"> Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- LOGIN SECTION -->
+    <section class="auth-section">
+        <div class="auth-container">
+            <div class="auth-left">
+                <h1>Welcome Back</h1>
+                <p>Sign in to your Stackly account to manage your electric vehicle and charging access</p>
+                <div class="auth-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">🔒</span>
+                        <p>Secure Access</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🚗</span>
+                        <p>Vehicle Control</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">⚡</span>
+                        <p>Charging Network</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="auth-right">
+                <div class="form-wrapper">
+                    <h2>Login</h2>
+                    <form id="loginForm" onsubmit="handleLogin(event)">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                            <span class="form-icon">✉️</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="••••••••" required>
+                            <span class="form-icon">🔑</span>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox"> Remember me</label>
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">Sign In</button>
+                    </form>
+                    
+                    <div class="divider">OR</div>
+                    
+                    <div class="social-login">
+                        <button class="social-btn google">
+                            <span>🔵</span> Google
+                        </button>
+                        <button class="social-btn facebook">
+                            <span>🔷</span> Facebook
+                        </button>
+                    </div>
+                    
+                    <p class="auth-switch">Don't have an account? <a href="register.html">Register here</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Electric Vehicles</a></li>
+                    <li><a href="blog.html">Charging Stations</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="products.html">Home Charging</a></li>
+                    <li><a href="products.html">Commercial Setup</a></li>
+                    <li><a href="#">Fleet Management</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Stackly Inc. All Rights Reserved. Designed by Antigravity.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
