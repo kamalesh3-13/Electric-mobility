@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Stackly Electronic Mobility</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+        <div class="loader-container">
+            <div class="preloader-content">
+                <div class="logo-animation">
+                    <img src="stackly-logo-main.webp" alt="Stackly Logo" class="preloader-logo">
+                    <div class="logo-glow"></div>
+                </div>
+                <div class="preloader-text">
+                    <p class="preload-line">Charge.</p>
+                    <p class="preload-line">Drive.</p>
+                    <p class="preload-line">Sustain.</p>
+                </div>
+                <p class="loader-subtitle">Loading your journey</p>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="stackly-logo-main.webp" alt="Stackly Logo" class="logo-image" style="width: 85px; height: auto;">
+            </a>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html" class="active">Services</a></li>
+                <li><a href="contact.html">Electric Vehicles</a></li>
+                <li><a href="blog.html">Charging</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li id="logoutLi" style="display: none; border-top: 1px solid #e0e0e0; padding-top: 15px; margin-top: 10px;"><a href="#" onclick="handleLogout(event)" class="auth-btn" style="width: 100%; text-align: center; background: #FF6B6B; color: white;">Logout</a></li>
+                <li id="authLi"><a href="login.html" class="auth-btn">Login</a></li>
+                <li><a href="register.html" class="auth-btn primary"> Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PRODUCTS HERO -->
+    <section class="products-hero">
+        <h1>Our Products</h1>
+        <p>Innovative solutions for every journey</p>
+    </section>
+
+    <!-- PRODUCT CATEGORIES -->
+    <section class="product-categories">
+        <div class="category-filter">
+            <button class="category-btn active" onclick="filterProducts('all')">All Products</button>
+            <button class="category-btn" onclick="filterProducts('escooter')">E-Scooters</button>
+            <button class="category-btn" onclick="filterProducts('ebike')">E-Bikes</button>
+            <button class="category-btn" onclick="filterProducts('erickshaw')">E-Rickshaws</button>
+        </div>
+    </section>
+
+    <!-- PRODUCTS SHOWCASE -->
+    <section class="products-showcase">
+        <!-- E-SCOOTER PRODUCTS -->
+        <div class="showcase-product" data-category="escooter">
+            <div class="product-showcase-card">
+                <div class="product-img-large">⚡</div>
+                <div class="product-details">
+                    <h2>Stackly Pro Max</h2>
+                    <p class="product-description">Our flagship e-scooter with 150km range and premium features</p>
+                    <div class="specs">
+                        <div class="spec-item">
+                            <span>🔋 Range</span>
+                            <strong>150 km</strong>
+                        </div>
+                        <div class="spec-item">
+                            <span>⚡ Power</span>
+                            <strong>3000W</strong>
+                        </div>
+                        <div class="spec-item">
+                            <span>⏱️ Charge</span>
+                            <strong>4.5 hrs</strong>
+                        </div>
+                        <div class="spec-item">
+                            <span>💨 Speed</span>
+                            <strong>85 km/h</strong>
+                        </div>
+                    </div>
+                    <p class="price">₹1,49,999</p>
+                    <button class="btn btn-primary" onclick="window.location.href='register.html'">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="showcase-product" data-category="escooter">
+            <div class="product-showcase-card">
+                <div class="product-img-large">⚡</div>
+                <div class="product-details">
+                    <h2>Stackly Air</h2>
+                    <p class="product-description">Lightweight and portable for urban commuters</p>
+                    <div class="specs">
+                        <div class="spec-item">
+                            <span>🔋 Range</span>
+                            <strong>80 km</strong>
+                        </div>
+                        <div class="spec-item">
+                            <span>⚡ Power</span>
+                            <strong>2000W</strong>
+                        </div>
+                        <div class="spec-item">
+                            <span>⏱️ Charge</span>
+                            <strong>3 hrs</strong>
+                        </div>
+                        <div class="spec-item">
+                            <span>⚖️ Weight</span>
+                            <strong>12 kg</strong>
+                        </div>
+                    </div>
+                    <p class="price">₹79,999</p>
+                    <button class="btn btn-primary" onclick="window.location.href='register.html'">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- E-BIKE PRODUCTS -->
+        <div class="showcase-product" data-category="ebike">
+            <div class="product-showcase-card">
+                <div class="product-img-large">🚲</div>
+                <div class="product-details">
+                    <h2>Stackly Cycle Pro</h2>
+                    <p class="product-description">Premium electric bike for long-distance eco-commuting</p>
+                    <div class="specs">
+                        <div class="spec-item">
+                            <span>🔋 Range</span>
+                            <strong>200 km</strong>
+                        </div>
+                        <div class="spec-item">
+                            <span>⚡ Power</span>
+                            <strong>1500W</strong>
+                        </div>
+                        <div class="spec-item">
+                            <span>⏱️ Charge</span>
+                            <strong>5 hrs</strong>
+                        </div>
+                        <div class="spec-item">
+                            <span>⚙️ Gears</span>
+                            <strong>21-Speed</strong>
+                        </div>
+                    </div>
+                    <p class="price">₹89,999</p>
+                    <button class="btn btn-primary" onclick="window.location.href='register.html'">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- E-RICKSHAW PRODUCTS -->
+        <div class="showcase-product" data-category="erickshaw">
+            <div class="product-showcase-card">
+                <div class="product-img-large">🛺</div>
+                <div class="product-details">
+                    <h2>Stackly Cargo</h2>
+                    <p class="product-description">Powerful 3-wheeler for commercial and delivery use</p>
+                    <div class="specs">
+                        <div class="spec-item">
+                            <span>🔋 Range</span>
+                            <strong>250 km</strong>
+                        </div>
+                        <div class="spec-item">
+                            <span>📦 Capacity</span>
+                            <strong>500 kg</strong>
+                        </div>
+                        <div class="spec-item">
+                            <span>⏱️ Charge</span>
+                            <strong>6 hrs</strong>
+                        </div>
+                        <div class="spec-item">
+                            <span>👥 Seating</span>
+                            <strong>3+1</strong>
+                        </div>
+                    </div>
+                    <p class="price">₹2,49,999</p>
+                    <button class="btn btn-primary" onclick="window.location.href='register.html'">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPARISON TABLE -->
+    <section class="comparison-section">
+        <h2>Compare All Products</h2>
+        <div class="comparison-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Stackly Pro Max</th>
+                        <th>Stackly Air</th>
+                        <th>Stackly Cycle Pro</th>
+                        <th>Stackly Cargo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td>E-Scooter</td>
+                        <td>E-Scooter</td>
+                        <td>E-Bike</td>
+                        <td>E-Rickshaw</td>
+                    </tr>
+                    <tr>
+                        <td>Range</td>
+                        <td>150 km</td>
+                        <td>80 km</td>
+                        <td>200 km</td>
+                        <td>250 km</td>
+                    </tr>
+                    <tr>
+                        <td>Power</td>
+                        <td>3000W</td>
+                        <td>2000W</td>
+                        <td>1500W</td>
+                        <td>5000W</td>
+                    </tr>
+                    <tr>
+                        <td>Charge Time</td>
+                        <td>4.5 hrs</td>
+                        <td>3 hrs</td>
+                        <td>5 hrs</td>
+                        <td>6 hrs</td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td>₹1,49,999</td>
+                        <td>₹79,999</td>
+                        <td>₹89,999</td>
+                        <td>₹2,49,999</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- WARRANTY & SUPPORT -->
+    <section class="warranty-section">
+        <h2>Warranty & Support</h2>
+        <div class="warranty-grid">
+            <div class="warranty-card">
+                <h3>🛡️ 3-Year Warranty</h3>
+                <p>Comprehensive coverage for all manufacturing defects and performance issues</p>
+            </div>
+            <div class="warranty-card">
+                <h3>🔧 Free Service</h3>
+                <p>Regular maintenance and service at our authorized service centers nationwide</p>
+            </div>
+            <div class="warranty-card">
+                <h3>📞 24/7 Support</h3>
+                <p>Round-the-clock customer support for all your queries and concerns</p>
+            </div>
+            <div class="warranty-card">
+                <h3>🚚 Fast Delivery</h3>
+                <p>Quick and safe delivery to your doorstep with installation assistance</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <h2>Find Your Perfect Ride</h2>
+        <p>Choose the product that fits your lifestyle and start your sustainable journey</p>
+        <div class="cta-buttons">
+            <button class="btn btn-primary" onclick="window.location.href='register.html'">Buy Now</button>
+            <button class="btn btn-secondary" onclick="window.location.href='login.html'">Sign In</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Stackly</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Stackly Electronic Mobility. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
